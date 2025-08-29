@@ -1,0 +1,82 @@
+html, body {
+    height: 100%; /* Full height for body */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+}
+main {
+    flex: 1; /* Allow main to grow and fill available space */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    justify-content: center; /* Center the grid */
+}
+.hockey {
+    justify-content: flex-start;
+    background: lightblue;
+    display: flex;
+    flex-direction: column; /* Stack logo and text vertically */
+    align-items: center;
+}
+
+#arvika {
+    background: lightblue;
+}
+#färjestad{
+    background: lightgreen;
+}
+#landslag{
+    background: yellow;
+}
+
+#chalmers{
+    background: lightgrey;
+}
+
+.logo {
+    width: 140px; /* Limit logo size */
+    max-height: auto; /* Limit logo size */
+    margin: 2rem 0; /* Margin for spacing */
+}
+
+#färjestad img {
+    width: 200px; /* Slightly larger for Färjestad logo */
+}
+
+.text {
+    text-align: center; /* Center text */
+}
+
+.text h1 {
+    color: white;
+    font-family: 'Playfair Display', serif; /* Elegant serif-typsnitt */
+    font-weight: 700;
+    font-style: italic; /* Ger lite krullighet */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Subtilt skugga för djup */
+    letter-spacing: 1px; /* Lite mer luft mellan bokstäverna */
+    margin-bottom: 0.3em; /* Mindre marginal under rubriken */
+}
+
+.text h2 {
+    color: white;
+    font-family: 'Cormorant Garamond', serif; /* Annat elegant typsnitt */
+    font-weight: 300;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    letter-spacing: 0.5px;
+}
+
+.text p {
+    color: white; /* Gör texten vit */
+    font-family: 'Cormorant Garamond', serif; /* Samma eleganta stil som h2 */
+    font-weight: 300;
+    line-height: 1.6; /* Bättre läsbarhet med radavstånd */
+    max-width: 600px; /* Gör att texten inte blir för bred */
+    margin: 1rem auto; /* Ger avstånd uppåt/nedåt och centrerar */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25); /* Gör vit text tydligare mot bakgrund */
+    font-size: 1.1rem; /* Lite större än standard för finare känsla */
+}
+
+

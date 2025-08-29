@@ -1,0 +1,111 @@
+body {
+    background-color: #f5f5f5;
+    word-break: break-word; /* bryter ord vid behov */
+    overflow-wrap: break-word; /* säkerställer att text inte går utanför */
+}
+
+main {
+    flex: 1; /* Allow main to grow and fill available space */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, 240px);
+    width: 100%;
+    gap: 60px;
+    margin-top: 44px;
+    justify-items: center;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    grid-auto-rows: 300px;
+   
+    
+}
+
+h2 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #ffa500;
+  padding: 10px 0px 10px 10px;
+}
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Liten mellanrum mellan rader */
+  padding: 10px;
+  background-color: #f0f8ff; /* ljusblå bakgrund för info-sektionen */
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-top: auto;
+}
+
+.course-info span {
+  font-family: Work Sans;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.grade {
+  color: #ffa500; /* orange för betyg */
+  font-weight: 600;
+}
+
+.credits {
+  color: #4a90e2; /* blå för högskolepoäng */
+}
+
+.personal {
+  color: #27ae60; /* grön för personlig uppskattning */
+}
+
+.box:hover {
+  transform: scale(1.2); /* växer 5% */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* skuggan blir djupare vid hover */
+}
+
+
+
+.description {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #4a4a4a;
+  padding: 10px 0px 10px 10px;
+  border-top: 1px solid #6c7a89;
+  border-bottom: 1px solid #6c7a89;
+  
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif; /* Elegant serif-typsnitt */
+    font-weight: 700;
+    font-style: italic; /* Ger lite krullighet */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Subtilt skugga för djup */
+    letter-spacing: 1px; /* Lite mer luft mellan bokstäverna */
+    margin-top: 40px; /* Mindre marginal under rubriken */
+    margin-bottom: 20px;
+    font-size: 45px;
+    text-align: center;
+}
+
+
+
