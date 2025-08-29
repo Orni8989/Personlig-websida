@@ -13,8 +13,8 @@ main {
     margin-top: 44px;
     justify-items: center;
     justify-content: center;
-    align-items: stretch;
-    align-content: center;
+    align-items: start;
+    
     grid-auto-rows: 300px;
    
     

@@ -59,21 +59,26 @@ main {
 }
 
 .bilder {
-    display: flex; /* Flexbox for layout */
-    justify-content: space-around; /* Center images */
-    align-items: center; /* Center images vertically */
-    margin-top: 0; /* Margin above images */
-    padding: 10%; /* Padding around images */
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    margin-top: 20px; 
+    padding: 5%; 
+    flex-wrap: wrap; /* Gör så bilderna flyttar ner på små skärmar */
+    gap: 20px; /* Litet mellanrum mellan bilder */
 }
 
 .bilder img {
-    max-width: 150px; /* Responsive images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow for depth */
-    transition: transform 3s ease; /* Smooth hover effect */
+    width: 20%; /* Tar 20% av förälderns bredd */
+    min-width: 150px; /* Inte mindre än 150px */
+    max-width: 300px; /* Inte större än 300px */
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-#hockey{
-    
+.bilder img:hover {
+    transform: scale(1.1); /* Förstorar bilden vid hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Djupare skugga */
 }
