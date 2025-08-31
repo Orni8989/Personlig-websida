@@ -79,4 +79,21 @@ main {
     font-size: 1.1rem; /* Lite större än standard för finare känsla */
 }
 
+#landslag img {
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
 
+
+.video-container {      
+      height: auto;      /* höjden anpassas automatiskt */
+      margin: 20px auto; /* centrerar på sidan */
+      overflow: hidden; /* gör så att rundningen gäller även videon */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* liten skugga */
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* fyller ut containern snyggt */
+    }
